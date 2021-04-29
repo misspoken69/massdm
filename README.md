@@ -17,6 +17,7 @@ Send a message to all users of a Discord server!
 | `xdmembed`     | Messages all members with an embed.|
 
 ## Help/Important
-This was made by Misspoken, and if you need help with anything, [join my Discord server](https://discord.com/invite/YDs64Ba8wK)! **Do not remove credits or you will have issues with law.**
+- This was made by Misspoken, and if you need help with anything, [join my Discord server](https://discord.com/invite/YDs64Ba8wK)! 
+- **Do not remove credits or you will have issues with law.**
 -------
 ✗ on top
