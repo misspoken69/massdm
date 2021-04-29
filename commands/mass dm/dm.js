@@ -38,7 +38,7 @@ module.exports.execute = async (client, message) => {
 module.exports.help = {
     name: "dm",
     aliases: [],
-    category: "MassDM",
+    category: "Mass DM",
     usage: "<message>",
     description: "Send a message to all users."
 }
