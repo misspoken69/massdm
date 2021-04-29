@@ -3,7 +3,7 @@ const whitelist = require("../../whitelist.json")
 
 module.exports.execute = async (client, message) => {
 
-  if(message.author.id !== whitelist.id && message.author.id !== whitelist.id2) return message.reply("You are not Whitelisted.")
+  if(message.author.id !== whitelist.id && message.author.id !== whitelist.id2) return message.reply("You aren't whitelisted.")
 
     let timedOut = false
   
@@ -16,7 +16,7 @@ module.exports.execute = async (client, message) => {
       time: 60 * 1000
     }
   
-    await channel.send('Message to Send?')
+    await channel.send('What message would you like to send?')
     const firstColl = await channel.awaitMessages(isFromAuthor, options)
   
     if (firstColl.size > 0) {
@@ -29,7 +29,7 @@ module.exports.execute = async (client, message) => {
       } else timedOut = true
 
     if (timedOut)
-    channel.send('Command canceled (timed out)')
+    channel.send('Command timed out. Cancelled.')
 
 }
 
@@ -40,5 +40,5 @@ module.exports.help = {
     aliases: [],
     category: "MassDM",
     usage: "<message>",
-    description: "Put message to adversite"
+    description: "Send a message to all users."
 }
